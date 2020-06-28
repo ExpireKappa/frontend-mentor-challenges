@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:200,200i,400,400i,700,700i&display=swap');
+
+:root {
+    /* Primary */
+    --cyan: hsl(179, 62%, 43%);
+    --lighter-cyan: hsl(179, 72%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+
+    /* Neutral */
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+    font-family: "Karla", Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--light-gray);
+}
+
+.main-container {
+    background-color: white;
+    max-width: 600px;
+    margin: 200px auto;
+    border-radius: 5px;
+}
+
+.main-container .top {
+    padding: 40px;
+}
+
+.main-container .top h1 {
+    color: var(--cyan);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.main-container .top .highlight {
+    color: var(--bright-yellow);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.main-container .top p {
+    color: var(--grayish-blue);
+    margin-top: 15px;
+    letter-spacing: 0.5px;
+}
+
+.bottom-container {
+    display: flex;
+    color: white;
+}
+
+.bottom-container > div {
+    flex: 1;
+    padding: 40px;
+}
+
+.bottom-container div:first-child {
+    background-color: var(--cyan);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 0 5px;
+}
+
+.bottom-container div:first-child h2,
+.bottom-container div:last-child h2 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.bottom-container div:first-child p {
+    letter-spacing: 0.5px;
+    margin: 5px 0;
+}
+
+.bottom-container div:first-child .price {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.bottom-container div:first-child .price span {
+    font-size: 1rem;
+    font-weight: 200;
+    color: var(--light-gray);
+    vertical-align: middle;
+}
+
+.bottom-container div:first-child button {
+    background-color: var(--bright-yellow);
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: white;
+    padding: 15px;
+    font-size: 1rem;
+    justify-self: self-end;
+    margin-top: 25px;
+    box-shadow: 0px 7px 10px -7px rgba(50, 50, 50, 1)
+}
+
+.bottom-container div:last-child {
+    background-color: var(--lighter-cyan);
+    border-radius: 0 0 5px 0;
+}
+
+.bottom-container div:last-child p {
+    white-space: pre-line;
+    color: var(--light-gray);
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 700px) { 
+    
+    .main-container {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .main-container .top {
+        padding: 20px;
+    }
+
+    .bottom-container > div {
+        padding: 20px;
+    }
+    
+    .bottom-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom-container div:first-child {
+        border-radius: 0px;
+    }
+
+    .bottom-container div:last-child {
+        border-radius: 0 0 5px 5px;
+    }
+
+    .attribution { 
+        margin-bottom: 40px;
+    }
+}
