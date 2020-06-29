@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Manrope:500,500i,700,700i&display=swap');
+
+:root {
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+
+* {
+    font-family: "Manrope", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--light-grayish-blue);
+}
+
+.article-container {
+    max-width: 800px;
+    background-color: white;
+    margin: 200px auto;
+    display: flex;
+    border-radius: 5px;
+}
+
+.article-container .image img {
+    width: 300px;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+}
+
+.article-header {
+    padding: 40px;
+    color: var(--desaturated-dark-blue);
+}
+
+.article-header h1 {
+    color: var(--very-dark-grayish-blue);
+    font-size: 1.4rem;
+}
+
+.article-header p {
+    color: var(--desaturated-dark-blue);
+    font-size: 0.9rem;
+}
+
+.author-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.author-container .profile-picture {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.author-container .account-name {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.author-container span {
+    color: var(--very-dark-grayish-blue);
+    font-weight: bold;
+}
+
+.share {
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: var(--light-grayish-blue);
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    float: right;
+}
+
+.share img {
+    margin: 0 auto;
+    width: 15px;
+    height: 15px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
